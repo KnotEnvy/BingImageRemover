@@ -1,0 +1,8 @@
+
+# Python 3.8 or later is needed
+
+# Required Python packages:
+Pillow==8.3.1
+opencv-python==4.5.3.56
+numpy==1.21.2
+matplotlib==3.4.3
