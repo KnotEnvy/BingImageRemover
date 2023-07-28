@@ -1,8 +1,12 @@
 
 # Python 3.8 or later is needed
 
+
+###### copy paste below line to install dependencies
+pip install numpy pillow matplotlib opencv-python
 # Required Python packages:
-Pillow==8.3.1
-opencv-python==4.5.3.56
-numpy==1.21.2
-matplotlib==3.4.3
+
+Pillow
+opencv-python
+numpy
+matplotlib
