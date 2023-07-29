@@ -3,7 +3,7 @@
 
 
 ###### copy paste below line to install dependencies
-pip install numpy pillow matplotlib opencv-python
+pip install numpy pillow matplotlib opencv-python TKinterModernThemes 
 # Required Python packages:
 
 Pillow

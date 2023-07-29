@@ -59,6 +59,20 @@ class App(TKMT.ThemedTKinterFrame):
         file_paths = select_files()
         output_path = select_output_dir()
         process_files(file_paths, output_path, self)
+        self.show_completion_window(output_path)
+
+    def show_completion_window(self, output_path):
+        completion_window = Toplevel(self.root)
+        completion_window.title('Done!')
+
+        completion_label = Label(completion_window, text='All files have been processed.')
+        completion_label.pack(pady=10)
+
+        open_folder_button = Button(completion_window, text='Open Output Folder', command=lambda: os.startfile(output_path))
+        open_folder_button.pack(pady=10)
+
+        run_again_button = Button(completion_window, text='Run Again', command=lambda: [completion_window.destroy(), self.on_run_button_click()])
+        run_again_button.pack(pady=10)
 
 app = App()
 app.run()
